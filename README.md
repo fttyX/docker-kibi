@@ -1,6 +1,5 @@
-<img src="https://avatars3.githubusercontent.com/u/12463357?v=3" />
 # docker-kibi
-Docker container running ```ES 2.4.1``` + ```Siren.join 2.4.1``` + ```Kibi 4.5.4```
+Docker container running ```ES 2.4.2``` + ```Siren.join 2.4.2``` + ```Kibi 4.5.4```
 
 ## About
 Kibi enhances Kibana with features for complex "relational" data.<br>
@@ -14,7 +13,7 @@ Kibi allows set to set navigation. One can start from a set (e.g., Articles this
 
 Run the image using local Elastic instance (w/ siren-join)
 ```
-$ docker run -i -t -p 9200:9200 -p 5601:5606 fttyx/docker-kibi
+$ docker run -i -t -p 9200:9200 -p 5606:5606 fttyx/docker-kibi
 ```
 
 Run the image using remote Elastic instance

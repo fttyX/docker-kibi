@@ -1,5 +1,5 @@
 # Linux OS
-FROM elasticsearch:2.4.1
+FROM elasticsearch:2.4.2
 
 # Maintainer
 MAINTAINER fttyx <fttyx@icloud.com>
@@ -28,7 +28,7 @@ RUN chmod 755 /opt/entrypoint.sh
 ENV PATH /opt/kibi/kibi/bin:$PATH
 
 # Expose Default Port
-EXPOSE 5601 5606
+EXPOSE 5606 5606
 EXPOSE 9200
 EXPOSE 9300
 EXPOSE 8899
