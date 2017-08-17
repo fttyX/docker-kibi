@@ -18,5 +18,5 @@ $ docker run -i -t -p 9200:9200 -p 5606:5606 fttyx/docker-kibi
 
 Run the image using remote Elastic instance
 ```
-$ docker run -i -t -e ELASTICSEARCH_URL=http://192.168.10.20:9200 -p 5601:5606 fttyx/docker-kibi
+$ docker run -i -t -e ELASTICSEARCH_URL="http://192.168.10.20:9200" -p 5601:5606 f"ttyx/docker-kibi
 ```
