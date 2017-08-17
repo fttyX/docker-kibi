@@ -4,8 +4,8 @@ set -e
 
 if [ -z ${ELASTICSEARCH_URL} ]; then
   ELASTICSEARCH_URL="localhost"
-  service elasticsearch start
-  tail -f /var/log/elasticsearch/*.log
+#  service elasticsearch start
+#  tail -f /var/log/elasticsearch/*.log
 fi
 
 # Patch demo kibi to use standard ES port
@@ -14,3 +14,4 @@ perl -p -i -e "s/localhost/$ELASTICSEARCH_URL/" /opt/kibi/config/kibi.yml
 
 # Start Kibi
 /opt/kibi/bin/kibi &
+tail -f /var/log/*log
