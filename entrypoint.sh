@@ -8,7 +8,7 @@ if [ -z ${ELASTICSEARCH_URL} ]; then
 #  tail -f /var/log/elasticsearch/*.log
 fi
 
-sed -r "s|^(\#\s*)?(elasticsearch\.url:).*|\2 '$ELASTICSEARCH_URL'|" /opt/kibi/config/kibi.yml
+sed -ri "s|^(\#\s*)?(elasticsearch\.url:).*|\2 '$ELASTICSEARCH_URL'|" /opt/kibi/config/kibi.yml
 
 # Patch demo kibi to use standard ES port
 perl -p -i -e "s/9220/9200/" /opt/kibi/config/kibi.yml
